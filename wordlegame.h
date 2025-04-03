@@ -8,12 +8,12 @@ class WordleGame : public QObject {
 public:
     explicit WordleGame(QObject* parent = nullptr);
 
-    Q_INVOKABLE void submitWord(); // Check current word
-    Q_INVOKABLE void typeLetter(QChar letter); // Add letter to active cell
-    Q_INVOKABLE void deleteLetter(); // Delete last letter
-    Q_INVOKABLE void restartGame(); // Reset the game
+    Q_INVOKABLE void submitWord();
+    Q_INVOKABLE void typeLetter(QChar letter);
+    Q_INVOKABLE void deleteLetter();
+    Q_INVOKABLE void restartGame();
 
-    enum LetterState { Correct, Misplaced, Incorrect, Empty };
+    enum LetterState { Empty, Correct, Misplaced, Incorrect };
     Q_ENUM(LetterState)
 
     struct LetterInfo {
@@ -22,6 +22,7 @@ public:
     };
 
     QVector<QVector<LetterInfo>> getBoardState() const; // Get board data
+    int getActiveRow() const;
 
 signals:
     void boardUpdated(); // Notify UI of changes

@@ -2,7 +2,6 @@
 #define GAMEMODEL_H
 
 #include "wordlegame.h"
-#include <QObject>
 #include <QAbstractListModel>
 
 class GameModel : public QAbstractListModel {
@@ -16,7 +15,10 @@ public:
     QHash<int, QByteArray> roleNames() const override;
 
 signals:
-    void animateRow(int rowIndex); // UI animation trigger
+    void animateRow(int rowIndex);
+
+private slots:
+    void updateChangedRow(); // ✅ Instead of using a lambda
 
 private:
     WordleGame* game;

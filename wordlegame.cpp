@@ -85,6 +85,11 @@ void WordleGame::restartGame() {
     emit boardUpdated();
 }
 
+int WordleGame::getActiveRow() const
+{
+    return activeRow;
+}
+
 QVector<QVector<WordleGame::LetterInfo>> WordleGame::getBoardState() const {
     return board;
 }

@@ -9,5 +9,8 @@ GridView {
     interactive: false
 
     delegate: LetterCell{
+        letter: model.letter
+        state:model.state
     }
+
 }
