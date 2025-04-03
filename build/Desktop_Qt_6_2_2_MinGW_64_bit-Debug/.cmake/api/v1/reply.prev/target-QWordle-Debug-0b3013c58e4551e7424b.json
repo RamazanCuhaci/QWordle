@@ -84,13 +84,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 61,
+				"line" : 63,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 43,
+				"line" : 45,
 				"parent" : 0
 			},
 			{
@@ -546,18 +546,20 @@
 			[
 				0,
 				1,
-				4
+				4,
+				6,
+				8
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"id" : "QWordle_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "QWordle_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "QWordle_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "QWordle::@6890427a1f51a3e7e1df",
@@ -694,7 +696,9 @@
 			[
 				0,
 				1,
-				4
+				4,
+				6,
+				8
 			]
 		},
 		{
@@ -705,18 +709,26 @@
 			]
 		},
 		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				3,
+				5
+			]
+		},
+		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				3
+				7
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				5,
-				6
+				9,
+				10
 			]
 		}
 	],
@@ -741,10 +753,32 @@
 			"sourceGroupIndex" : 1
 		},
 		{
+			"backtrace" : 4,
+			"path" : "wordlegame.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "wordlegame.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "gamemodel.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "gamemodel.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_2_2_MinGW_64_bit-Debug/QWordle_autogen/timestamp",
-			"sourceGroupIndex" : 2
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 0,
@@ -757,13 +791,13 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_2_2_MinGW_64_bit-Debug/QWordle_autogen/timestamp.rule",
-			"sourceGroupIndex" : 3
+			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_2_2_MinGW_64_bit-Debug/QWordle_autogen/EWIEGA46WW/qrc_qml.cpp.rule",
-			"sourceGroupIndex" : 3
+			"sourceGroupIndex" : 4
 		}
 	],
 	"type" : "EXECUTABLE"

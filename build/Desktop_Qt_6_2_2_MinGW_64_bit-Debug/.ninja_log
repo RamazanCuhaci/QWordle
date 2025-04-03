@@ -1,0 +1,17 @@
+# ninja log v6
+4	543	7653703019300848	QWordle_autogen/timestamp	789be8186ab31ded
+4	543	7653703019300848	QWordle_autogen/mocs_compilation.cpp	789be8186ab31ded
+4	543	7653703019300848	C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Debug/QWordle_autogen/timestamp	789be8186ab31ded
+4	543	7653703019300848	C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Debug/QWordle_autogen/mocs_compilation.cpp	789be8186ab31ded
+546	609	7653703020477814	QWordle_autogen/EWIEGA46WW/qrc_qml.cpp	a2459f2110fb258b
+546	609	7653703020477814	C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Debug/QWordle_autogen/EWIEGA46WW/qrc_qml.cpp	a2459f2110fb258b
+619	671	7653703020647958	CMakeFiles/QWordle.dir/QWordle_autogen/EWIEGA46WW/qrc_qml.cpp.obj	1355bfdba3a3d636
+609	1865	7653703020547956	CMakeFiles/QWordle.dir/QWordle_autogen/mocs_compilation.cpp.obj	59294de6b0900b67
+614	2072	7653703020597965	CMakeFiles/QWordle.dir/wordlegame.cpp.obj	33caa08af8dfc031
+612	2113	7653703020567949	CMakeFiles/QWordle.dir/main.cpp.obj	11cacf8431a934b0
+41	178	7653703348194248	QWordle_autogen/timestamp	789be8186ab31ded
+41	178	7653703348194248	QWordle_autogen/mocs_compilation.cpp	789be8186ab31ded
+41	178	7653703348194248	C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Debug/QWordle_autogen/timestamp	789be8186ab31ded
+41	178	7653703348194248	C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Debug/QWordle_autogen/mocs_compilation.cpp	789be8186ab31ded
+179	1312	7653703349573692	CMakeFiles/QWordle.dir/gamemodel.cpp.obj	64438fe1e13cea82
+1312	1552	7653703360908436	QWordle.exe	c0300b05c36087bc

@@ -1,9 +1,32 @@
-import QtQuick 2.14
-import QtQuick.Window 2.14
+import QtQuick 2.15
+import QtQuick.Controls 2.15
 
 Window {
-    width: 640
-    height: 480
     visible: true
-    title: qsTr("Hello World")
+    width: 400
+    height: 600
+    color: "#121213"
+    title: "QWordle"
+
+    WordleBoard {
+        id: board
+        anchors.top: parent.top
+        anchors.horizontalCenter: parent.horizontalCenter
+        width: 300
+        height: 360
+    }
+
+    Keyboard {
+        id: keyboard
+        anchors.bottom: parent.bottom
+    }
+
+    Connections {
+        target: wordleGame
+        function onGameFinished(won) {
+            messageDialog.text = won ? "You won!" : "Game over!"
+            messageDialog.open()
+        }
+    }
+
 }

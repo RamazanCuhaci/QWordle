@@ -1,5 +1,8 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <QQmlContext>
+#include "gamemodel.h"
+#include "wordlegame.h"
 
 int main(int argc, char *argv[])
 {
@@ -7,8 +10,15 @@ int main(int argc, char *argv[])
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 #endif
     QGuiApplication app(argc, argv);
-
     QQmlApplicationEngine engine;
+
+    WordleGame wordleGame;
+    GameModel gameModel(&wordleGame);
+
+    engine.rootContext()->setContextProperty("wordleGame", &wordleGame);
+    engine.rootContext()->setContextProperty("gameModel", &gameModel);
+
+
     const QUrl url(QStringLiteral("qrc:/main.qml"));
     QObject::connect(
         &engine,
