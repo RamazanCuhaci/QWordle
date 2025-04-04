@@ -18,7 +18,8 @@ signals:
     void animateRow(int rowIndex);
 
 private slots:
-    void updateChangedRow(); // ✅ Instead of using a lambda
+    void updateChangedRow(int row);
+    void updateChangedCell(int row, int column);
 
 private:
     WordleGame* game;

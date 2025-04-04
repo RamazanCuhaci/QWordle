@@ -4,5 +4,6 @@
         <file>Keyboard.qml</file>
         <file>WordleBoard.qml</file>
         <file>LetterCell.qml</file>
+        <file>WordRow.qml</file>
     </qresource>
 </RCC>

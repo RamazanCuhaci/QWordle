@@ -12,6 +12,7 @@
 		"C:/Users/ramcho/Desktop/Lectures/QWordle/WordleBoard.qml",
 		"C:/Users/ramcho/Desktop/Lectures/QWordle/Keyboard.qml",
 		"C:/Users/ramcho/Desktop/Lectures/QWordle/main.qml",
+		"C:/Users/ramcho/Desktop/Lectures/QWordle/WordRow.qml",
 		"C:/Users/ramcho/Desktop/Lectures/QWordle/LetterCell.qml"
 	],
 	"LOCK_FILE" : "C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Debug/CMakeFiles/QWordle_autogen.dir/AutoRcc_qml_EWIEGA46WW_Lock.lock",

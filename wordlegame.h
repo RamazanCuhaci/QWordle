@@ -13,7 +13,7 @@ public:
     Q_INVOKABLE void deleteLetter();
     Q_INVOKABLE void restartGame();
 
-    enum LetterState { Empty, Correct, Misplaced, Incorrect };
+    enum LetterState { Default, Correct, Misplaced, Incorrect };
     Q_ENUM(LetterState)
 
     struct LetterInfo {
@@ -23,10 +23,13 @@ public:
 
     QVector<QVector<LetterInfo>> getBoardState() const; // Get board data
     int getActiveRow() const;
+    int getActiveColumn() const;
 
 signals:
-    void boardUpdated(); // Notify UI of changes
+    void rowUpdated(int row);
+    void cellUpdated(int row, int column);
     void gameFinished(bool won);
+    void flipRow(int row); // for trigger the flip animation after submit word
 
 private:
     QString correctWord;

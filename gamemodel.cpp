@@ -2,16 +2,26 @@
 
 GameModel::GameModel(WordleGame* game, QObject* parent)
     : QAbstractListModel(parent), game(game) {
-    connect(game, &WordleGame::boardUpdated, this, &GameModel::updateChangedRow);
+    connect(game, &WordleGame::rowUpdated, this, &GameModel::updateChangedRow);
+    connect(game, &WordleGame::cellUpdated, this, &GameModel::updateChangedRow);
 }
 
-void GameModel::updateChangedRow() {
-    if (!game) return;
-    int row = game->getActiveRow();
-    if (row >= 0 && row < 6) {
-        emit dataChanged(index(row * 5, 0), index(row * 5 + 4, 0), { LetterRole, StateRole });
+void GameModel::updateChangedRow(int activeRow) {
+
+
+    if (activeRow >= 0 && activeRow < 6) {
+        int from = activeRow * 5;
+        int to = from + 4;
+        emit dataChanged(index(from * 5, 0), index(to * 5 + 4, 0), { LetterRole, StateRole });
     }
 }
+
+void GameModel::updateChangedCell(int row, int column)
+{
+    int i = row * 5 + column;
+    emit dataChanged(index(i, 0), index(i, 0));
+}
+
 int GameModel::rowCount(const QModelIndex&) const {
     return 30; // 6 rows × 5 columns
 }
@@ -32,3 +42,4 @@ QVariant GameModel::data(const QModelIndex& index, int role) const {
 QHash<int, QByteArray> GameModel::roleNames() const {
     return { { LetterRole, "letter" }, { StateRole, "state" } };
 }
+

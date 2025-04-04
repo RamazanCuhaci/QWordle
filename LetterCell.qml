@@ -36,7 +36,7 @@ Item {
     onLetterChanged: {
         console.log("Letter typed:", letter);
         if (letter !== " ") {
-            typeAnimation.start();  // Trigger the animation
+            typeAnimation.start();
         }
     }
 
