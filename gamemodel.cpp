@@ -3,7 +3,7 @@
 GameModel::GameModel(WordleGame* game, QObject* parent)
     : QAbstractListModel(parent), game(game) {
     connect(game, &WordleGame::rowUpdated, this, &GameModel::updateChangedRow);
-    connect(game, &WordleGame::cellUpdated, this, &GameModel::updateChangedRow);
+    connect(game, &WordleGame::cellUpdated, this, &GameModel::updateChangedCell);
 }
 
 void GameModel::updateChangedRow(int activeRow) {

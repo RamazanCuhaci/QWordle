@@ -342,6 +342,12 @@
 			null
 		],
 		[
+			"C:/Users/ramcho/Desktop/Lectures/QWordle/keyinputfilter.h",
+			"MU",
+			"EWIEGA46WW/moc_keyinputfilter.cpp",
+			null
+		],
+		[
 			"C:/Users/ramcho/Desktop/Lectures/QWordle/wordlegame.h",
 			"MU",
 			"EWIEGA46WW/moc_wordlegame.cpp",
@@ -421,6 +427,11 @@
 	"SOURCES" : 
 	[
 		[ "C:/Users/ramcho/Desktop/Lectures/QWordle/gamemodel.cpp", "MU", null ],
+		[
+			"C:/Users/ramcho/Desktop/Lectures/QWordle/keyinputfilter.cpp",
+			"MU",
+			null
+		],
 		[ "C:/Users/ramcho/Desktop/Lectures/QWordle/main.cpp", "MU", null ],
 		[ "C:/Users/ramcho/Desktop/Lectures/QWordle/wordlegame.cpp", "MU", null ]
 	],

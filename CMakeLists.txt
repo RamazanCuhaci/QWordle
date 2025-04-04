@@ -23,6 +23,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
         wordlegame.h wordlegame.cpp
         gamemodel.h gamemodel.cpp
+        keyinputfilter.h keyinputfilter.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET QWordle APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

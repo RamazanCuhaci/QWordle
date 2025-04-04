@@ -81,6 +81,14 @@ build CMakeFiles/QWordle.dir/gamemodel.cpp.obj: CXX_COMPILER__QWordle_unscanned_
   OBJECT_DIR = CMakeFiles\QWordle.dir
   OBJECT_FILE_DIR = CMakeFiles\QWordle.dir
 
+build CMakeFiles/QWordle.dir/keyinputfilter.cpp.obj: CXX_COMPILER__QWordle_unscanned_Debug C$:/Users/ramcho/Desktop/Lectures/QWordle/keyinputfilter.cpp || cmake_object_order_depends_target_QWordle
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\QWordle.dir\keyinputfilter.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Debug/QWordle_autogen/include -isystem C:/Qt/6.2.2/mingw_64/include/QtCore -isystem C:/Qt/6.2.2/mingw_64/include -isystem C:/Qt/6.2.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.2.2/mingw_64/include/QtQuick -isystem C:/Qt/6.2.2/mingw_64/include/QtGui -isystem C:/VulkanSDK/1.3.296.0/Include -isystem C:/Qt/6.2.2/mingw_64/include/QtQml -isystem C:/Qt/6.2.2/mingw_64/include/QtNetwork -isystem C:/Qt/6.2.2/mingw_64/include/QtQmlModels -isystem C:/Qt/6.2.2/mingw_64/include/QtOpenGL
+  OBJECT_DIR = CMakeFiles\QWordle.dir
+  OBJECT_FILE_DIR = CMakeFiles\QWordle.dir
+
 build CMakeFiles/QWordle.dir/QWordle_autogen/EWIEGA46WW/qrc_qml.cpp.obj: CXX_COMPILER__QWordle_unscanned_Debug C$:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Debug/QWordle_autogen/EWIEGA46WW/qrc_qml.cpp || cmake_object_order_depends_target_QWordle
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\QWordle.dir\QWordle_autogen\EWIEGA46WW\qrc_qml.cpp.obj.d
@@ -97,7 +105,7 @@ build CMakeFiles/QWordle.dir/QWordle_autogen/EWIEGA46WW/qrc_qml.cpp.obj: CXX_COM
 #############################################
 # Link the executable QWordle.exe
 
-build QWordle.exe: CXX_EXECUTABLE_LINKER__QWordle_Debug CMakeFiles/QWordle.dir/QWordle_autogen/mocs_compilation.cpp.obj CMakeFiles/QWordle.dir/main.cpp.obj CMakeFiles/QWordle.dir/wordlegame.cpp.obj CMakeFiles/QWordle.dir/gamemodel.cpp.obj CMakeFiles/QWordle.dir/QWordle_autogen/EWIEGA46WW/qrc_qml.cpp.obj | C$:/Qt/6.2.2/mingw_64/lib/libQt6Quick.a C$:/Qt/6.2.2/mingw_64/lib/libQt6QmlModels.a C$:/Qt/6.2.2/mingw_64/lib/libQt6Qml.a C$:/Qt/6.2.2/mingw_64/lib/libQt6Network.a C$:/Qt/6.2.2/mingw_64/lib/libQt6OpenGL.a C$:/Qt/6.2.2/mingw_64/lib/libQt6Gui.a C$:/Qt/6.2.2/mingw_64/lib/libQt6Core.a C$:/Qt/6.2.2/mingw_64/lib/libQt6EntryPoint.a || QWordle_autogen QWordle_autogen_timestamp_deps
+build QWordle.exe: CXX_EXECUTABLE_LINKER__QWordle_Debug CMakeFiles/QWordle.dir/QWordle_autogen/mocs_compilation.cpp.obj CMakeFiles/QWordle.dir/main.cpp.obj CMakeFiles/QWordle.dir/wordlegame.cpp.obj CMakeFiles/QWordle.dir/gamemodel.cpp.obj CMakeFiles/QWordle.dir/keyinputfilter.cpp.obj CMakeFiles/QWordle.dir/QWordle_autogen/EWIEGA46WW/qrc_qml.cpp.obj | C$:/Qt/6.2.2/mingw_64/lib/libQt6Quick.a C$:/Qt/6.2.2/mingw_64/lib/libQt6QmlModels.a C$:/Qt/6.2.2/mingw_64/lib/libQt6Qml.a C$:/Qt/6.2.2/mingw_64/lib/libQt6Network.a C$:/Qt/6.2.2/mingw_64/lib/libQt6OpenGL.a C$:/Qt/6.2.2/mingw_64/lib/libQt6Gui.a C$:/Qt/6.2.2/mingw_64/lib/libQt6Core.a C$:/Qt/6.2.2/mingw_64/lib/libQt6EntryPoint.a || QWordle_autogen QWordle_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = C:/Qt/6.2.2/mingw_64/lib/libQt6Quick.a  C:/Qt/6.2.2/mingw_64/lib/libQt6QmlModels.a  C:/Qt/6.2.2/mingw_64/lib/libQt6Qml.a  C:/Qt/6.2.2/mingw_64/lib/libQt6Network.a  -lws2_32  C:/Qt/6.2.2/mingw_64/lib/libQt6OpenGL.a  C:/Qt/6.2.2/mingw_64/lib/libQt6Gui.a  C:/Qt/6.2.2/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  C:/Qt/6.2.2/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -ld3d11  -ldxgi  -ldxguid  -luser32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -201,7 +209,7 @@ build QWordle_autogen/timestamp QWordle_autogen/mocs_compilation.cpp | ${cmake_n
 #############################################
 # Custom command for QWordle_autogen\EWIEGA46WW\qrc_qml.cpp
 
-build QWordle_autogen/EWIEGA46WW/qrc_qml.cpp | ${cmake_ninja_workdir}QWordle_autogen/EWIEGA46WW/qrc_qml.cpp: CUSTOM_COMMAND C$:/Users/ramcho/Desktop/Lectures/QWordle/qml.qrc CMakeFiles/QWordle_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json C$:/Users/ramcho/Desktop/Lectures/QWordle/WordleBoard.qml C$:/Users/ramcho/Desktop/Lectures/QWordle/Keyboard.qml C$:/Users/ramcho/Desktop/Lectures/QWordle/main.qml C$:/Users/ramcho/Desktop/Lectures/QWordle/WordRow.qml C$:/Users/ramcho/Desktop/Lectures/QWordle/LetterCell.qml C$:/Qt/6.2.2/mingw_64/./bin/rcc.exe C$:/Qt/6.2.2/mingw_64/./bin/rcc.exe || QWordle_autogen QWordle_autogen_timestamp_deps
+build QWordle_autogen/EWIEGA46WW/qrc_qml.cpp | ${cmake_ninja_workdir}QWordle_autogen/EWIEGA46WW/qrc_qml.cpp: CUSTOM_COMMAND C$:/Users/ramcho/Desktop/Lectures/QWordle/qml.qrc CMakeFiles/QWordle_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json C$:/Users/ramcho/Desktop/Lectures/QWordle/WordleBoard.qml C$:/Users/ramcho/Desktop/Lectures/QWordle/Keyboard.qml C$:/Users/ramcho/Desktop/Lectures/QWordle/main.qml C$:/Users/ramcho/Desktop/Lectures/QWordle/LetterCell.qml C$:/Qt/6.2.2/mingw_64/./bin/rcc.exe C$:/Qt/6.2.2/mingw_64/./bin/rcc.exe || QWordle_autogen QWordle_autogen_timestamp_deps
   COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\ramcho\Desktop\Lectures\QWordle\build\Desktop_Qt_6_2_2_MinGW_64_bit-Debug && C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Debug/CMakeFiles/QWordle_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json Debug"
   DESC = Automatic RCC for qml.qrc
   restat = 1
