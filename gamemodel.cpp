@@ -7,15 +7,12 @@ GameModel::GameModel(WordleGame* game, QObject* parent)
 }
 
 void GameModel::updateChangedRow(int activeRow) {
-
-
     if (activeRow >= 0 && activeRow < 6) {
         int from = activeRow * 5;
         int to = from + 4;
-        emit dataChanged(index(from * 5, 0), index(to * 5 + 4, 0), { LetterRole, StateRole });
+        emit dataChanged(index(from, 0), index(to, 0), { LetterRole, StateRole });
     }
 }
-
 void GameModel::updateChangedCell(int row, int column)
 {
     int i = row * 5 + column;

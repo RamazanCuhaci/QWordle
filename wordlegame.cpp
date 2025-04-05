@@ -1,47 +1,51 @@
 #include "wordlegame.h"
 
-#include <QRandomGenerator>
 #include <QDebug>
+#include <QRandomGenerator>
 
-WordleGame::WordleGame(QObject* parent)
-    : QObject(parent), activeRow(0), activeColumn(0)
+WordleGame::WordleGame(QObject *parent)
+    : QObject(parent)
+    , activeRow(0)
+    , activeColumn(0)
 {
-    board.resize(6, QVector<LetterInfo>(5, { ' ', Default }));
+    board.resize(6, QVector<LetterInfo>(5, {' ', Default}));
     correctWord = "APPLE";
 }
 
-void WordleGame::typeLetter(QChar letter) {
+void WordleGame::typeLetter(QChar letter)
+{
     if (activeRow < 6 && activeColumn < 5) {
-        board[activeRow][activeColumn] = { letter.toUpper(), Default };
+        board[activeRow][activeColumn] = {letter.toUpper(), Default};
         emit cellUpdated(activeRow, activeColumn);
         activeColumn++;
     }
-
 }
 
-void WordleGame::deleteLetter() {
+void WordleGame::deleteLetter()
+{
     if (activeColumn > 0) {
         activeColumn--;
-        board[activeRow][activeColumn] = { ' ', Default };
+        board[activeRow][activeColumn] = {' ', Default};
         emit cellUpdated(activeRow, activeColumn);
     }
 }
 
-void WordleGame::submitWord() {
+void WordleGame::submitWord()
+{
     if (activeColumn < 5) {
         qWarning() << "Word is not complete!";
         return;
     }
 
     QString guess;
-    for (const auto& letterInfo : board[activeRow]) {
+    for (const auto &letterInfo : board[activeRow]) {
         guess.append(letterInfo.letter);
     }
 
     qInfo() << guess << "\n";
 
     if (guess == correctWord) {
-        for (auto& cell : board[activeRow]) {
+        for (auto &cell : board[activeRow]) {
             cell.state = Correct;
         }
         emit rowUpdated(activeRow);
@@ -51,7 +55,8 @@ void WordleGame::submitWord() {
 
     // Evaluate correctness of each letter
     QMap<QChar, int> correctLetterCounts;
-    for (QChar c : correctWord) correctLetterCounts[c]++;
+    for (QChar c : correctWord)
+        correctLetterCounts[c]++;
 
     for (int i = 0; i < 5; ++i) {
         if (board[activeRow][i].letter == correctWord[i]) {
@@ -61,7 +66,8 @@ void WordleGame::submitWord() {
     }
 
     for (int i = 0; i < 5; ++i) {
-        if (board[activeRow][i].state != Correct && correctLetterCounts[board[activeRow][i].letter] > 0) {
+        if (board[activeRow][i].state != Correct
+            && correctLetterCounts[board[activeRow][i].letter] > 0) {
             board[activeRow][i].state = Misplaced;
             correctLetterCounts[board[activeRow][i].letter]--;
         } else if (board[activeRow][i].state != Correct) {
@@ -71,6 +77,7 @@ void WordleGame::submitWord() {
 
     emit rowUpdated(activeRow);
     emit flipRow(activeRow);
+    emit updateKeyStates(guess, correctWord);
 
     if (activeRow < 5) {
         activeRow++;
@@ -80,10 +87,11 @@ void WordleGame::submitWord() {
     }
 }
 
-void WordleGame::restartGame() {
+void WordleGame::restartGame()
+{
     activeRow = 0;
     activeColumn = 0;
-    board.fill(QVector<LetterInfo>(5, { ' ', Default }));
+    board.fill(QVector<LetterInfo>(5, {' ', Default}));
     //This should be update all board
     //emit boardUpdated();
 }
@@ -98,6 +106,7 @@ int WordleGame::getActiveColumn() const
     return activeColumn;
 }
 
-QVector<QVector<WordleGame::LetterInfo>> WordleGame::getBoardState() const {
+QVector<QVector<WordleGame::LetterInfo>> WordleGame::getBoardState() const
+{
     return board;
 }

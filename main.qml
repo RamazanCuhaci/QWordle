@@ -18,6 +18,7 @@ Window {
 
     Keyboard {
         id: keyboard
+        width: parent.width
         anchors.bottom: parent.bottom
     }
 

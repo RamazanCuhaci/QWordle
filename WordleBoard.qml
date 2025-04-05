@@ -10,7 +10,7 @@ GridView {
 
     delegate: LetterCell{
         letter: model.letter
-        state:model.state
+        state: model.state
     }
 
 }

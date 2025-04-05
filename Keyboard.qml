@@ -1,39 +1,33 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
+import QtQuick.Layouts
 
-Column {
-    spacing: 5
+Item {
+    width: parent.width
+    height: parent.height / 2
     anchors.horizontalCenter: parent.horizontalCenter
 
-    property var keys: [
-        "QWERTYUIOP",
-        "ASDFGHJKL",
-        "ZXCVBNM"
-    ]
+    Flow {
+        anchors.fill: parent
+        anchors.margins: 10
+        spacing: 5
 
-    Repeater {
-        model: keys
-        Row {
-            spacing: 5
-            Repeater {
-                model: modelData.split("")
-                Button {
-                    text: modelData
-                    width: 50
-                    height: 50
-                    onPressed: wordleGame.typeLetter(text)
-                }
+        Repeater {
+            model: keyboardModel
+            delegate: Key {
+                letter: model.key
+                state: model.state
+                width: parent.width / 12
+                height: 50
+                font.pixelSize: 18
+
             }
         }
-    }
-
-    Row {
-        spacing: 5
         Button {
             text: "Del"
             width: 75
             height: 50
-            onPressed: wordleGame.deleteLetter()
+            onClicked: wordleGame.deleteLetter()
         }
         Button {
             text: "Enter"
@@ -43,3 +37,5 @@ Column {
         }
     }
 }
+
+

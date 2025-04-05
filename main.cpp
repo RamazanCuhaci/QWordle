@@ -3,6 +3,7 @@
 #include <QQmlContext>
 #include "KeyInputFilter.h"
 #include "gamemodel.h"
+#include "keyboardmodel.h"
 #include "wordlegame.h"
 
 int main(int argc, char *argv[])
@@ -13,10 +14,12 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
     QQmlApplicationEngine engine;
 
-    WordleGame wordleGame;
-    GameModel gameModel(&wordleGame);
+    WordleGame wordleGame(&app);
 
-    KeyInputFilter keyFilter;
+    GameModel gameModel(&wordleGame);
+    KeyboardModel keyboardModel;
+
+    KeyInputFilter keyFilter(&app);
     app.installEventFilter(&keyFilter);
 
     // Connect the filter's signals to your game slots
@@ -27,6 +30,10 @@ int main(int argc, char *argv[])
     QObject::connect(&keyFilter, &KeyInputFilter::submitPressed,
                      &wordleGame, &WordleGame::submitWord);
 
+    QObject::connect(&wordleGame, &WordleGame::updateKeyStates,
+                     &keyboardModel, &KeyboardModel::keyStateUpdated);
+
+    engine.rootContext()->setContextProperty("keyboardModel", &keyboardModel);
     engine.rootContext()->setContextProperty("wordleGame", &wordleGame);
     engine.rootContext()->setContextProperty("gameModel", &gameModel);
 

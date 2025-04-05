@@ -5,13 +5,13 @@ Item {
     property string letter
     property int state
     property color inColor : "#121213"
-    property color borderColor :"#3a3a3c"
+    property color borderColor :letter === " " ? "#353536" : "#565758"
 
     Rectangle {
         id : cell
         width: board.cellWidth - 5
         height: board.cellHeight - 5
-        border.color: letter === " " ? "#353536" : "#565758"
+        border.color: borderColor
         border.width: 2
         anchors.margins: 5
         color: inColor
@@ -34,22 +34,21 @@ Item {
     }
 
     onLetterChanged: {
-        console.log("Letter typed:", letter);
         if (letter !== " ") {
             typeAnimation.start();
         }
     }
 
     onStateChanged: {
-
         if (state === 1) {        // Correct state
             inColor = "#538d4e";
+            borderColor = "#538d4e";
         } else if (state === 2) { // Misplaced state
             inColor = "#b59f3b";
+            borderColor = "#b59f3b";
         } else if (state === 3) { // Incorrect state
             inColor = "#3a3a3c";
-        } else {                  // Empty state
-            inColor = "#121213";
+            borderColor = "#3a3a3c";
         }
     }
 }

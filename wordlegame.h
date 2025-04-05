@@ -24,12 +24,14 @@ public:
     QVector<QVector<LetterInfo>> getBoardState() const; // Get board data
     int getActiveRow() const;
     int getActiveColumn() const;
+    // WordleGame.h
 
 signals:
     void rowUpdated(int row);
     void cellUpdated(int row, int column);
     void gameFinished(bool won);
     void flipRow(int row); // for trigger the flip animation after submit word
+    void updateKeyStates(QString guess, QString correctWord);
 
 private:
     QString correctWord;
