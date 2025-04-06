@@ -1,41 +1,47 @@
+// Key.qml
 import QtQuick 2.15
-import QtQuick.Controls 2.15
 
-Button {
-    id: keyButton
+Rectangle {
+    id: keyRect
     property string letter: ""
     property int state: 0
-    property color inColor : "#818384"
-
-
-    text: letter
+    property color defaultColor: "#818384"
+    property color hoverColor: "#9a9fa1"
+    property color currentColor: defaultColor
     width: 30
-    height: 30
-    font.bold: true
+    height: 40
+    radius: 5
+    color: currentColor
 
-    background: Rectangle {
+    Text {
+        anchors.centerIn: parent
+        text: letter
+        font.bold: true
+        color: "white"
+    }
+
+    MouseArea {
+        id: mouseArea
         anchors.fill: parent
-        radius: 5
-        border.color: "#565758"
-        border.width: 1
-        color: inColor
+        hoverEnabled: true
+        onPressed: wordleGame.typeLetter(letter)
+
+        onEntered: keyRect.currentColor = hoverColor
+        onExited: keyRect.currentColor = keyRect.getColorForState()
     }
 
-    onPressed: {
-        wordleGame.typeLetter(letter)
-    }
-
-    onStateChanged: {
-        if (state === 1) {        // Correct state
-            inColor = "#538d4e";
-        } else if (state === 2) { // Misplaced state
-            inColor = "#b59f3b";
-        } else if (state === 3) { // Incorrect state
-            inColor = "#3a3a3c";
-        }
-        else{
-            inColor = "#818384";
+    function getColorForState() {
+        if (state === 1) {
+            return "#538d4e"; // correct
+        } else if (state === 2) {
+            return "#b59f3b"; // present
+        } else if (state === 3) {
+            return "#3a3a3c"; // absent
+        } else {
+            return defaultColor;
         }
     }
 
+    Component.onCompleted: currentColor = getColorForState()
+    onStateChanged: currentColor = getColorForState()
 }

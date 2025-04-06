@@ -38,10 +38,25 @@ Popup {
                     horizontalAlignment: Text.AlignHCenter
                 }
 
-                Button {
-                    text: "✕"
-                    background: Rectangle { color: "transparent" }
-                    onClicked: howToPlayPopup.close()
+                Rectangle {
+                    width: 40
+                    height: 40
+                    Layout.alignment: Qt.AlignRight | Qt.AlignTop
+                    Layout.margins: 4
+                    color:"#121213"
+                    Text{
+                        anchors.centerIn: parent
+                        text: "X"
+                        color:"#e7e7e7"
+                        font.pixelSize: 30
+                    }
+                    MouseArea{
+                        anchors.fill:parent
+                        onClicked: howToPlayPopup.close()
+                        hoverEnabled: true
+                        onEntered: parent.color = "#2b2c2e"
+                        onExited: parent.color ="#121213"
+                    }
                 }
             }
 

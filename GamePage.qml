@@ -15,7 +15,7 @@ Item {
     Rectangle {
         id: topBar
         width: parent.width
-        height: 40
+        height: 60
         color: "#121213"
         border.color: "#3a3a3c"
 
@@ -25,13 +25,30 @@ Item {
             spacing: 10
             padding: 10
 
-            Button {
-                text: "❓"
-                background: Rectangle {
-                    color: "transparent"
+            Rectangle {
+                id: howToPlayPopupButton
+                width: 50
+                height: 50
+                Layout.alignment: Qt.AlignRight | Qt.AlignTop
+                Layout.margins: 4
+                color:"#121213"
+                radius:20
+                border.width:2
+                border.color:"white"
+                Text{
+                    anchors.centerIn: parent
+                    text: "?"
+                    color:"#e7e7e7"
+                    font.pixelSize: 40
                 }
-                font.pixelSize: 18
-                onClicked: howToPlayPopup.open()
+                MouseArea{
+                    anchors.fill:parent
+                    onClicked: howToPlayPopup.open()
+                    hoverEnabled: true
+                    onEntered: parent.color = "#2b2c2e"
+                    onExited: parent.color ="#121213"
+                }
+
             }
         }
     }

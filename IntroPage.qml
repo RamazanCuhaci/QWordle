@@ -28,9 +28,9 @@ Item {
 
         Rectangle {
             id: playButton
-            width: 80
-            height: 30
-            radius:10
+            width: 140
+            height: 40
+            radius:60
             anchors.horizontalCenter: parent.horizontalCenter
             color:"#000000"
             Text{

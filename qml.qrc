@@ -13,7 +13,6 @@
         <file>GameOverPopup.qml</file>
     </qresource>
     <qresource prefix="/images">
-        <file>correct-example.png</file>
         <file>incorrect-example.png</file>
         <file>wrong-spot-example.png</file>
         <file>wordle-icon.png</file>

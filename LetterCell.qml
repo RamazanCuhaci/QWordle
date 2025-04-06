@@ -11,6 +11,10 @@ Item {
     property color borderColor: letter === " " ? "#353536" : "#565758"
     property real originalHeight: board.cellHeight
 
+
+    signal revealAnimationFinished()
+    signal winAnimationFinished()
+
     // Flip effect: scale applied to the whole letter cell
     transform: Scale {
         id: scaleTransform
@@ -67,6 +71,7 @@ Item {
             typeAnimation.start();
         }
     }
+
     SequentialAnimation {
         id: typeAnimation
         ScaleAnimator { target: cell; to: 1.2; duration: 120; easing.type: Easing.OutQuad }
@@ -103,6 +108,7 @@ Item {
             duration: 180
             easing.type: Easing.OutQuad
         }
+        onFinished: {revealAnimationFinished()}
     }
 
     // Winning (bounce) animation: animate winTranslate.y
