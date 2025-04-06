@@ -8,7 +8,7 @@ class WordleGame : public QObject {
     Q_OBJECT
 
 public:
-    explicit WordleGame(QObject* parent = nullptr);
+    explicit WordleGame(QObject* parent = nullptr, QString filePath = nullptr );
 
     Q_INVOKABLE void submitWord();
     Q_INVOKABLE void typeLetter(QChar letter);
@@ -38,7 +38,9 @@ signals:
     // 2:win animation
     void rowAnimation(int row, int type);
 
-    void updateKeyStates(QString guess, QString correctWord);
+    void updateKeyStates(QVariantMap keyStates);
+    void showNotification(QString message);
+    void boardUpdated();
 
 private:
     QString correctWord;

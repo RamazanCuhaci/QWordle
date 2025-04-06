@@ -14,28 +14,23 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
     QQmlApplicationEngine engine;
 
-    WordleGame wordleGame(&app);
 
-    GameModel gameModel(&wordleGame);
-    KeyboardModel keyboardModel;
+    WordleGame* wordleGame = new WordleGame(&app,":/words.txt");
+    GameModel* gameModel = new GameModel(wordleGame);
 
     KeyInputFilter keyFilter(&app);
     app.installEventFilter(&keyFilter);
 
     // Connect the filter's signals to your game slots
     QObject::connect(&keyFilter, &KeyInputFilter::letterTyped,
-                     &wordleGame, &WordleGame::typeLetter);
+                     wordleGame, &WordleGame::typeLetter);
     QObject::connect(&keyFilter, &KeyInputFilter::deletePressed,
-                     &wordleGame, &WordleGame::deleteLetter);
+                     wordleGame, &WordleGame::deleteLetter);
     QObject::connect(&keyFilter, &KeyInputFilter::submitPressed,
-                     &wordleGame, &WordleGame::submitWord);
+                     wordleGame, &WordleGame::submitWord);
 
-    QObject::connect(&wordleGame, &WordleGame::updateKeyStates,
-                     &keyboardModel, &KeyboardModel::keyStateUpdated);
-
-    engine.rootContext()->setContextProperty("keyboardModel", &keyboardModel);
-    engine.rootContext()->setContextProperty("wordleGame", &wordleGame);
-    engine.rootContext()->setContextProperty("gameModel", &gameModel);
+    engine.rootContext()->setContextProperty("wordleGame", wordleGame);
+    engine.rootContext()->setContextProperty("gameModel", gameModel);
 
 
     const QUrl url(QStringLiteral("qrc:/main.qml"));

@@ -1,40 +1,49 @@
+// Keyboard.qml
 import QtQuick 2.15
 import QtQuick.Controls 2.15
-import QtQuick.Layouts
 
 Item {
-    width: parent.width
-    height: parent.height / 2
-    anchors.horizontalCenter: parent.horizontalCenter
+    id: keyboard
+    property var keyStates: ({})  // Default mapping: empty means all keys use default state 0
 
-    Flow {
-        anchors.fill: parent
-        spacing: 5
+    Column {
+        spacing: 8
+        anchors.centerIn: parent
 
-        Repeater {
-            model: keyboardModel
-            delegate: Key {
-                letter: model.key
-                state: model.state
-                width: parent.width / 12
-                height: 40
-                font.pixelSize: 18
-
+        // First row
+        Row {
+            spacing: 4
+            Repeater {
+                model: ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"]
+                delegate: Key {
+                    letter: modelData
+                    state: keyboard.keyStates[modelData] !== undefined ? keyboard.keyStates[modelData] : 0
+                }
             }
         }
-        Button {
-            text: "Del"
-            width: 50
-            height: 50
-            onClicked: wordleGame.deleteLetter()
+
+        // Second row
+        Row {
+            spacing: 4
+            Repeater {
+                model: ["A", "S", "D", "F", "G", "H", "J", "K", "L"]
+                delegate: Key {
+                    letter: modelData
+                    state: keyboard.keyStates[modelData] !== undefined ? keyboard.keyStates[modelData] : 0
+                }
+            }
         }
-        Button {
-            text: "Enter"
-            width: 50
-            height: 50
-            onClicked: wordleGame.submitWord()
+
+        // Third row
+        Row {
+            spacing: 4
+            Repeater {
+                model: ["Z", "X", "C", "V", "B", "N", "M"]
+                delegate: Key {
+                    letter: modelData
+                    state: keyboard.keyStates[modelData] !== undefined ? keyboard.keyStates[modelData] : 0
+                }
+            }
         }
     }
 }
-
-

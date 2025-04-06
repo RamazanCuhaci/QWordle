@@ -20,6 +20,7 @@ signals:
 private slots:
     void updateChangedRow(int row);
     void updateChangedCell(int row, int column);
+    void resetBoard();
 
 private:
     WordleGame* game;
