@@ -5,7 +5,7 @@ Popup {
     id: gameOverPopup
     modal: true
     focus: true
-    width: parent.width * 0.8
+    width: 400
     height: 200
     anchors.centerIn: parent
     background: Rectangle {
@@ -48,6 +48,7 @@ Popup {
                     exitGame()
                 }
             }
+
         }
     }
 }

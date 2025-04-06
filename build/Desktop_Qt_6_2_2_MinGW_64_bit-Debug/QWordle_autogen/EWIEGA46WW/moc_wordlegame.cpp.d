@@ -1,5 +1,6 @@
 C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Debug/QWordle_autogen/EWIEGA46WW/moc_wordlegame.cpp: C:/Users/ramcho/Desktop/Lectures/QWordle/wordlegame.h \
   C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Debug/QWordle_autogen/moc_predefs.h \
+  C:/Qt/6.2.2/mingw_64/include/QtCore/QMap \
   C:/Qt/6.2.2/mingw_64/include/QtCore/QObject \
   C:/Qt/6.2.2/mingw_64/include/QtCore/QSet \
   C:/Qt/6.2.2/mingw_64/include/QtCore/QString \
@@ -35,6 +36,7 @@ C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Deb
   C:/Qt/6.2.2/mingw_64/include/QtCore/qiterator.h \
   C:/Qt/6.2.2/mingw_64/include/QtCore/qlist.h \
   C:/Qt/6.2.2/mingw_64/include/QtCore/qlogging.h \
+  C:/Qt/6.2.2/mingw_64/include/QtCore/qmap.h \
   C:/Qt/6.2.2/mingw_64/include/QtCore/qmath.h \
   C:/Qt/6.2.2/mingw_64/include/QtCore/qmetacontainer.h \
   C:/Qt/6.2.2/mingw_64/include/QtCore/qmetatype.h \
@@ -53,6 +55,7 @@ C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Deb
   C:/Qt/6.2.2/mingw_64/include/QtCore/qscopeguard.h \
   C:/Qt/6.2.2/mingw_64/include/QtCore/qset.h \
   C:/Qt/6.2.2/mingw_64/include/QtCore/qshareddata.h \
+  C:/Qt/6.2.2/mingw_64/include/QtCore/qshareddata_impl.h \
   C:/Qt/6.2.2/mingw_64/include/QtCore/qstring.h \
   C:/Qt/6.2.2/mingw_64/include/QtCore/qstringalgorithms.h \
   C:/Qt/6.2.2/mingw_64/include/QtCore/qstringlist.h \

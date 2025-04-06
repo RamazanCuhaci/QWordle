@@ -2,6 +2,7 @@
 #define WORDLEGAME_H
 
 #include <QObject>
+#include <QMap>
 #include "worddictionary.h"
 
 class WordleGame : public QObject {
@@ -50,7 +51,7 @@ private:
 
     WordDictionary* dictionary;
 
-    void evaluateGuess();
+    QVariantMap m_keyStates;
 };
 
 

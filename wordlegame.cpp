@@ -68,11 +68,11 @@ void WordleGame::submitWord()
 
         // This is for to ensure that the win animation plays
         // after the reveal animation is finished.
-        QTimer::singleShot(1800, [this]()
+        QTimer::singleShot(2000, [this]()
         {
             emit showNotification("Splendid");
             // Type 2: Win animation.
-            emit rowAnimation(activeRow, 2);
+            emit rowAnimation(activeRow-1, 2);
             emit gameFinished(true);
         });
     }
@@ -121,25 +121,24 @@ void WordleGame::submitWord()
     emit rowAnimation(activeRow, 0);
 
 
-
-
-    QVariantMap keyStates;
-
-    for (int i = 0; i < 5; ++i) {
+    for (int i = 0; i < 5; ++i)
+    {
         QChar letter = board[activeRow][i].letter;
         int state = board[activeRow][i].state;
 
         // If a letter was already marked as higher priority, skip updating it
-        if (keyStates.contains(letter)) {
-            int existingState = keyStates[letter].toInt();
-            if (existingState == 1 || (existingState == 2 && state == 3)) {
+        if (m_keyStates.contains(letter))
+        {
+            int existingState = m_keyStates[letter].toInt();
+            if (existingState == 1 || (existingState == 2 && state == 3))
+            {
                 continue;
             }
         }
-        keyStates[letter] = state;
+        m_keyStates[letter] = state;
     }
 
-    updateKeyStates(keyStates);
+    updateKeyStates(m_keyStates);
 
 
     // Check the game finish
@@ -163,6 +162,9 @@ void WordleGame::restartGame()
     board.fill(QVector<LetterInfo>(5, {' ', Default}));
     dictionary->resetRandomAnswer();
     correctWord = dictionary->getRandomAnswer();
+    qDebug() << "GAME RESTARTED\n" ;
+    m_keyStates.clear();
+    emit updateKeyStates(m_keyStates);
     emit boardUpdated();
 }
 

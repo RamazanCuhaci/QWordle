@@ -89,7 +89,7 @@ Item {
 
     GameOverPopup {
         id: gameOverPopup
-
+        width: parent.width * 0.8
         onTryAgain: {
             wordleGame.restartGame()
         }

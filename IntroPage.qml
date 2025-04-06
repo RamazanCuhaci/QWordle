@@ -26,11 +26,26 @@ Item {
             anchors.horizontalCenter: parent.horizontalCenter
         }
 
-        Button {
+        Rectangle {
             id: playButton
-            text: "Play"
-            onClicked: playPressed()
+            width: 80
+            height: 30
+            radius:10
             anchors.horizontalCenter: parent.horizontalCenter
+            color:"#000000"
+            Text{
+                anchors.centerIn: parent
+                text: "Play"
+                color:"#e7e7e7"
+            }
+            MouseArea{
+                anchors.fill:parent
+                onClicked: playPressed()
+                hoverEnabled: true
+                onEntered: parent.color = "#2b2c2e"
+                onExited: parent.color = "#000000"
+            }
+
         }
     }
 

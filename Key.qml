@@ -33,6 +33,9 @@ Button {
         } else if (state === 3) { // Incorrect state
             inColor = "#3a3a3c";
         }
+        else{
+            inColor = "#818384";
+        }
     }
 
 }

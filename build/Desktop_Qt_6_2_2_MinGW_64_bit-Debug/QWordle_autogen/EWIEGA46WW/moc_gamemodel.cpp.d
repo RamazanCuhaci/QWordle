@@ -1,6 +1,7 @@
 C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Debug/QWordle_autogen/EWIEGA46WW/moc_gamemodel.cpp: C:/Users/ramcho/Desktop/Lectures/QWordle/gamemodel.h \
   C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Debug/QWordle_autogen/moc_predefs.h \
   C:/Qt/6.2.2/mingw_64/include/QtCore/QAbstractListModel \
+  C:/Qt/6.2.2/mingw_64/include/QtCore/QMap \
   C:/Qt/6.2.2/mingw_64/include/QtCore/QObject \
   C:/Qt/6.2.2/mingw_64/include/QtCore/QSet \
   C:/Qt/6.2.2/mingw_64/include/QtCore/QString \

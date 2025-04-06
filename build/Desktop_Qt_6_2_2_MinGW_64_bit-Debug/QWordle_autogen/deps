@@ -2,6 +2,7 @@ QWordle_autogen/timestamp: \
 	C:/Qt/6.2.2/mingw_64/include/QtCore/QAbstractListModel \
 	C:/Qt/6.2.2/mingw_64/include/QtCore/QEvent \
 	C:/Qt/6.2.2/mingw_64/include/QtCore/QList \
+	C:/Qt/6.2.2/mingw_64/include/QtCore/QMap \
 	C:/Qt/6.2.2/mingw_64/include/QtCore/QObject \
 	C:/Qt/6.2.2/mingw_64/include/QtCore/QRect \
 	C:/Qt/6.2.2/mingw_64/include/QtCore/QSet \
