@@ -40,10 +40,11 @@ void WordleGame::submitWord()
 {
     if (activeColumn < 5)
     {
-        qWarning() << "Word is not complete!";
+        qWarning() << "Not enough letters";
 
         // Type 1: Shaking animation
         emit rowAnimation(activeRow, 1);
+        emit showNotification("Not enough letters");
         return;
     }
 
@@ -74,7 +75,9 @@ void WordleGame::submitWord()
             // Type 2: Win animation.
             emit rowAnimation(activeRow-1, 2);
             emit gameFinished(true);
+            return;
         });
+
     }
 
     if (!dictionary->isValidWord(guess))

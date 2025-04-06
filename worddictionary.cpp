@@ -29,8 +29,7 @@ bool WordDictionary::loadFromFile(const QString &fileName)
         if (!line.isEmpty())
         {
             wordSet.insert(line);
-            // Reservoir sampling to select a random word
-            ++count;
+            count++;
             if (QRandomGenerator::global()->bounded(count) == 0)
             {
                 randomAnswer = line;
@@ -79,8 +78,11 @@ void WordDictionary::resetRandomAnswer()
     {
         if (i == targetIndex)
         {
-            randomAnswer = word;
-            ++i;
+            setRandomAnswer(word);
+            break;
         }
+        i++;
     }
+
+    qDebug() << "NEW RANDOM ANSWER IS : " << randomAnswer;
 }
