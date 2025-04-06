@@ -342,12 +342,6 @@
 			null
 		],
 		[
-			"C:/Users/ramcho/Desktop/Lectures/QWordle/keyboardmodel.h",
-			"MU",
-			"EWIEGA46WW/moc_keyboardmodel.cpp",
-			null
-		],
-		[
 			"C:/Users/ramcho/Desktop/Lectures/QWordle/keyinputfilter.h",
 			"MU",
 			"EWIEGA46WW/moc_keyinputfilter.cpp",
@@ -439,11 +433,6 @@
 	"SOURCES" : 
 	[
 		[ "C:/Users/ramcho/Desktop/Lectures/QWordle/gamemodel.cpp", "MU", null ],
-		[
-			"C:/Users/ramcho/Desktop/Lectures/QWordle/keyboardmodel.cpp",
-			"MU",
-			null
-		],
 		[
 			"C:/Users/ramcho/Desktop/Lectures/QWordle/keyinputfilter.cpp",
 			"MU",

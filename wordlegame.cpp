@@ -100,7 +100,8 @@ void WordleGame::submitWord()
         }
     }
 
-    for (int i = 0; i < 5; ++i) {
+    for (int i = 0; i < 5; ++i)
+    {
         if (board[activeRow][i].state != Correct
             && correctLetterCounts[board[activeRow][i].letter] > 0)
         {

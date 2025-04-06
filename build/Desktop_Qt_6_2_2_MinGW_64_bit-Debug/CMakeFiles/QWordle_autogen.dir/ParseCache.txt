@@ -585,6 +585,7 @@ C:/Users/ramcho/Desktop/Lectures/QWordle/wordlegame.h
  mdp:C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Debug/QWordle_autogen/moc_predefs.h
  mdp:C:/Users/ramcho/Desktop/Lectures/QWordle/worddictionary.h
  mdp:C:/Users/ramcho/Desktop/Lectures/QWordle/wordlegame.h
+C:/Users/ramcho/Desktop/Lectures/QWordle/gamemodel.cpp
 C:/Users/ramcho/Desktop/Lectures/QWordle/keyboardmodel.h
  mmc:Q_OBJECT
  mdp:C:/Qt/6.2.2/mingw_64/include/QtCore/QAbstractListModel
@@ -881,9 +882,8 @@ C:/Users/ramcho/Desktop/Lectures/QWordle/keyboardmodel.h
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wctype.h
  mdp:C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Debug/QWordle_autogen/moc_predefs.h
  mdp:C:/Users/ramcho/Desktop/Lectures/QWordle/keyboardmodel.h
-C:/Users/ramcho/Desktop/Lectures/QWordle/gamemodel.cpp
-C:/Users/ramcho/Desktop/Lectures/QWordle/wordlegame.cpp
 C:/Users/ramcho/Desktop/Lectures/QWordle/main.cpp
+C:/Users/ramcho/Desktop/Lectures/QWordle/wordlegame.cpp
 C:/Users/ramcho/Desktop/Lectures/QWordle/keyinputfilter.h
  mmc:Q_OBJECT
  mdp:C:/Qt/6.2.2/mingw_64/include/QtCore/QEvent

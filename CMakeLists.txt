@@ -24,7 +24,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         wordlegame.h wordlegame.cpp
         gamemodel.h gamemodel.cpp
         keyinputfilter.h keyinputfilter.cpp
-        keyboardmodel.h keyboardmodel.cpp
+
         worddictionary.h worddictionary.cpp
 
 

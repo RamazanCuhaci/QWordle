@@ -3,7 +3,6 @@
 #include <QQmlContext>
 #include "KeyInputFilter.h"
 #include "gamemodel.h"
-#include "keyboardmodel.h"
 #include "wordlegame.h"
 
 int main(int argc, char *argv[])

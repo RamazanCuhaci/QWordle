@@ -1,6 +1,5 @@
 QWordle_autogen/timestamp: \
 	C:/Qt/6.2.2/mingw_64/include/QtCore/QAbstractListModel \
-	C:/Qt/6.2.2/mingw_64/include/QtCore/QChar \
 	C:/Qt/6.2.2/mingw_64/include/QtCore/QEvent \
 	C:/Qt/6.2.2/mingw_64/include/QtCore/QList \
 	C:/Qt/6.2.2/mingw_64/include/QtCore/QObject \
@@ -480,8 +479,6 @@ QWordle_autogen/timestamp: \
 	C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Debug/QWordle_autogen/moc_predefs.h \
 	C:/Users/ramcho/Desktop/Lectures/QWordle/gamemodel.cpp \
 	C:/Users/ramcho/Desktop/Lectures/QWordle/gamemodel.h \
-	C:/Users/ramcho/Desktop/Lectures/QWordle/keyboardmodel.cpp \
-	C:/Users/ramcho/Desktop/Lectures/QWordle/keyboardmodel.h \
 	C:/Users/ramcho/Desktop/Lectures/QWordle/keyinputfilter.cpp \
 	C:/Users/ramcho/Desktop/Lectures/QWordle/keyinputfilter.h \
 	C:/Users/ramcho/Desktop/Lectures/QWordle/main.cpp \
