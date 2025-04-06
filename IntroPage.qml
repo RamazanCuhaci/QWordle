@@ -7,7 +7,7 @@ Item {
 
 
     Column {
-        spacing: 20
+        spacing: 10
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.centerIn: parent
 
@@ -22,8 +22,17 @@ Item {
             text: "QWordle"
             font.pixelSize: 40
             font.bold: true
+            //font.family: "Helvetica"
             horizontalAlignment: Text.AlignHCenter
             anchors.horizontalCenter: parent.horizontalCenter
+        }
+        Text {
+
+            text: "Get 6 chances to guess a 5-letter word."
+            font.pixelSize: 20
+            font.family: "Helvetica"
+            horizontalAlignment: Text.AlignHCenter
+            anchors.horizontalCenter: name.horizontalCenter
         }
 
         Rectangle {
@@ -36,6 +45,8 @@ Item {
             Text{
                 anchors.centerIn: parent
                 text: "Play"
+                font.family: "Helvetica"
+                font.pixelSize: 20
                 color:"#e7e7e7"
             }
             MouseArea{
