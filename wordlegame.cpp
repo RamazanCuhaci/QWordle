@@ -7,9 +7,11 @@ WordleGame::WordleGame(QObject *parent)
     : QObject(parent)
     , activeRow(0)
     , activeColumn(0)
+    , dictionary(new WordDictionary(this))
 {
     board.resize(6, QVector<LetterInfo>(5, {' ', Default}));
-    correctWord = "APPLE";
+    dictionary->loadFromFile("words.txt");
+    correctWord = dictionary->getRandomAnswer();
 }
 
 void WordleGame::typeLetter(QChar letter)
@@ -50,7 +52,7 @@ void WordleGame::submitWord()
         }
         emit rowUpdated(activeRow);
         emit gameFinished(true);
-        return;
+        emit
     }
 
     // Evaluate correctness of each letter
@@ -76,7 +78,7 @@ void WordleGame::submitWord()
     }
 
     emit rowUpdated(activeRow);
-    emit flipRow(activeRow);
+    emit rowAnimation(activeRow, 0);
     emit updateKeyStates(guess, correctWord);
 
     if (activeRow < 5) {

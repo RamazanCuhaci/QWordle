@@ -1,6 +1,8 @@
 C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Debug/QWordle_autogen/EWIEGA46WW/moc_wordlegame.cpp: C:/Users/ramcho/Desktop/Lectures/QWordle/wordlegame.h \
   C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Debug/QWordle_autogen/moc_predefs.h \
   C:/Qt/6.2.2/mingw_64/include/QtCore/QObject \
+  C:/Qt/6.2.2/mingw_64/include/QtCore/QSet \
+  C:/Qt/6.2.2/mingw_64/include/QtCore/QString \
   C:/Qt/6.2.2/mingw_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.2.2/mingw_64/include/QtCore/qanystringview.h \
   C:/Qt/6.2.2/mingw_64/include/QtCore/qarraydata.h \
@@ -26,6 +28,7 @@ C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Deb
   C:/Qt/6.2.2/mingw_64/include/QtCore/qgenericatomic.h \
   C:/Qt/6.2.2/mingw_64/include/QtCore/qglobal.h \
   C:/Qt/6.2.2/mingw_64/include/QtCore/qglobalstatic.h \
+  C:/Qt/6.2.2/mingw_64/include/QtCore/qhash.h \
   C:/Qt/6.2.2/mingw_64/include/QtCore/qhashfunctions.h \
   C:/Qt/6.2.2/mingw_64/include/QtCore/qiodevicebase.h \
   C:/Qt/6.2.2/mingw_64/include/QtCore/qiterable.h \
@@ -48,6 +51,7 @@ C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Deb
   C:/Qt/6.2.2/mingw_64/include/QtCore/qrefcount.h \
   C:/Qt/6.2.2/mingw_64/include/QtCore/qscopedpointer.h \
   C:/Qt/6.2.2/mingw_64/include/QtCore/qscopeguard.h \
+  C:/Qt/6.2.2/mingw_64/include/QtCore/qset.h \
   C:/Qt/6.2.2/mingw_64/include/QtCore/qshareddata.h \
   C:/Qt/6.2.2/mingw_64/include/QtCore/qstring.h \
   C:/Qt/6.2.2/mingw_64/include/QtCore/qstringalgorithms.h \
@@ -277,4 +281,5 @@ C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Deb
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
-  C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wctype.h
+  C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wctype.h \
+  C:/Users/ramcho/Desktop/Lectures/QWordle/worddictionary.h

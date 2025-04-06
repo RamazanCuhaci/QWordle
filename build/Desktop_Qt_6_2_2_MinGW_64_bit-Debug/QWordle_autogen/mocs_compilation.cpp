@@ -2,4 +2,5 @@
 #include "EWIEGA46WW/moc_gamemodel.cpp"
 #include "EWIEGA46WW/moc_keyboardmodel.cpp"
 #include "EWIEGA46WW/moc_keyinputfilter.cpp"
+#include "EWIEGA46WW/moc_worddictionary.cpp"
 #include "EWIEGA46WW/moc_wordlegame.cpp"

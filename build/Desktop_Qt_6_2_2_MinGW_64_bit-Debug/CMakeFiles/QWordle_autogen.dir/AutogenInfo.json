@@ -354,6 +354,12 @@
 			null
 		],
 		[
+			"C:/Users/ramcho/Desktop/Lectures/QWordle/worddictionary.h",
+			"MU",
+			"EWIEGA46WW/moc_worddictionary.cpp",
+			null
+		],
+		[
 			"C:/Users/ramcho/Desktop/Lectures/QWordle/wordlegame.h",
 			"MU",
 			"EWIEGA46WW/moc_wordlegame.cpp",
@@ -444,6 +450,11 @@
 			null
 		],
 		[ "C:/Users/ramcho/Desktop/Lectures/QWordle/main.cpp", "MU", null ],
+		[
+			"C:/Users/ramcho/Desktop/Lectures/QWordle/worddictionary.cpp",
+			"MU",
+			null
+		],
 		[ "C:/Users/ramcho/Desktop/Lectures/QWordle/wordlegame.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

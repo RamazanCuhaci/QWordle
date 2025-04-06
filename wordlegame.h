@@ -2,9 +2,11 @@
 #define WORDLEGAME_H
 
 #include <QObject>
+#include "worddictionary.h"
 
 class WordleGame : public QObject {
     Q_OBJECT
+
 public:
     explicit WordleGame(QObject* parent = nullptr);
 
@@ -30,7 +32,12 @@ signals:
     void rowUpdated(int row);
     void cellUpdated(int row, int column);
     void gameFinished(bool won);
-    void flipRow(int row); // for trigger the flip animation after submit word
+
+    // 0:flip animation
+    // 1:not in word list anim
+    // 2:win animation
+    void rowAnimation(int row, int type);
+
     void updateKeyStates(QString guess, QString correctWord);
 
 private:
@@ -38,6 +45,8 @@ private:
     int activeRow;
     int activeColumn;
     QVector<QVector<LetterInfo>> board;
+
+    WordDictionary* dictionary;
 
     void evaluateGuess();
 };

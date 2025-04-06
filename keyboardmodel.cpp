@@ -49,7 +49,6 @@ void KeyboardModel::updateKeyState(QChar letter, int state)
     for (int i = 0; i < m_keys.count(); ++i) {
         if (m_keys[i].letter == letter) {
             m_keys[i].state = static_cast<KeyState>(state);
-            qDebug() << "Key state updated for" << letter << "to" << m_keys[i].state;
             emit dataChanged(index(i, 0), index(i, 0), { StateRole });
             break;
         }

@@ -5,8 +5,10 @@ QWordle_autogen/timestamp: \
 	C:/Qt/6.2.2/mingw_64/include/QtCore/QList \
 	C:/Qt/6.2.2/mingw_64/include/QtCore/QObject \
 	C:/Qt/6.2.2/mingw_64/include/QtCore/QRect \
+	C:/Qt/6.2.2/mingw_64/include/QtCore/QSet \
 	C:/Qt/6.2.2/mingw_64/include/QtCore/QSize \
 	C:/Qt/6.2.2/mingw_64/include/QtCore/QSizeF \
+	C:/Qt/6.2.2/mingw_64/include/QtCore/QString \
 	C:/Qt/6.2.2/mingw_64/include/QtCore/qabstractitemmodel.h \
 	C:/Qt/6.2.2/mingw_64/include/QtCore/qalgorithms.h \
 	C:/Qt/6.2.2/mingw_64/include/QtCore/qanystringview.h \
@@ -484,6 +486,8 @@ QWordle_autogen/timestamp: \
 	C:/Users/ramcho/Desktop/Lectures/QWordle/keyinputfilter.h \
 	C:/Users/ramcho/Desktop/Lectures/QWordle/main.cpp \
 	C:/Users/ramcho/Desktop/Lectures/QWordle/qml.qrc \
+	C:/Users/ramcho/Desktop/Lectures/QWordle/worddictionary.cpp \
+	C:/Users/ramcho/Desktop/Lectures/QWordle/worddictionary.h \
 	C:/Users/ramcho/Desktop/Lectures/QWordle/wordlegame.cpp \
 	C:/Users/ramcho/Desktop/Lectures/QWordle/wordlegame.h \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

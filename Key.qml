@@ -26,7 +26,6 @@ Button {
     }
 
     onStateChanged: {
-        console.log("State changed", state)
         if (state === 1) {        // Correct state
             inColor = "#538d4e";
         } else if (state === 2) { // Misplaced state

@@ -18,8 +18,10 @@ Window {
 
     Keyboard {
         id: keyboard
-        width: parent.width
-        anchors.bottom: parent.bottom
+        y: 473
+        width: 346
+        height: 127
+        anchors.horizontalCenterOffset: 0
     }
 
     Connections {

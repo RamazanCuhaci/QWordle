@@ -9,7 +9,6 @@ Item {
 
     Flow {
         anchors.fill: parent
-        anchors.margins: 10
         spacing: 5
 
         Repeater {
@@ -18,20 +17,20 @@ Item {
                 letter: model.key
                 state: model.state
                 width: parent.width / 12
-                height: 50
+                height: 40
                 font.pixelSize: 18
 
             }
         }
         Button {
             text: "Del"
-            width: 75
+            width: 50
             height: 50
             onClicked: wordleGame.deleteLetter()
         }
         Button {
             text: "Enter"
-            width: 100
+            width: 50
             height: 50
             onClicked: wordleGame.submitWord()
         }

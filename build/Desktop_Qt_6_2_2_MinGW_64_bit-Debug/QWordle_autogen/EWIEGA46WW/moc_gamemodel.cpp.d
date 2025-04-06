@@ -2,6 +2,8 @@ C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Deb
   C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Debug/QWordle_autogen/moc_predefs.h \
   C:/Qt/6.2.2/mingw_64/include/QtCore/QAbstractListModel \
   C:/Qt/6.2.2/mingw_64/include/QtCore/QObject \
+  C:/Qt/6.2.2/mingw_64/include/QtCore/QSet \
+  C:/Qt/6.2.2/mingw_64/include/QtCore/QString \
   C:/Qt/6.2.2/mingw_64/include/QtCore/qabstractitemmodel.h \
   C:/Qt/6.2.2/mingw_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.2.2/mingw_64/include/QtCore/qanystringview.h \
@@ -291,4 +293,5 @@ C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Deb
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wctype.h \
+  C:/Users/ramcho/Desktop/Lectures/QWordle/worddictionary.h \
   C:/Users/ramcho/Desktop/Lectures/QWordle/wordlegame.h
