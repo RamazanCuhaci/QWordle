@@ -85,7 +85,7 @@ This project cleanly separates concerns between the QML user interface and the C
 - Connects to `WordleGame` signals to emit data updates efficiently (`dataChanged`, `beginResetModel`).
 
 Using a model  `QAbstractListModel` provides several advantages in a QML-heavy UI:
-- Automatic UI updates through bindings — no manual syncing needed.
+- Automatic UI updates through bindings
 - Efficient rendering with `ListView`, `Repeater`, or `GridView`.
 - Clean separation of logic (C++) and presentation (QML).
 - Example usage:
