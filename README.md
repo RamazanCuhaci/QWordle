@@ -33,7 +33,12 @@ https://github.com/user-attachments/assets/75fcac48-2b0b-41a3-929b-27705201075e
 
 
 ### Example of Losing Scenario
-
+- This scenario includes:
+  - Losing mechanism  
+  - Not in word list animation 
+  - Not in enough letters animation 
+  - When lose popup correct word
+    
 https://github.com/user-attachments/assets/84d3b4e2-c904-4506-aa0d-801b3434d6c4
 
 
