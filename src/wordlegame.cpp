@@ -117,13 +117,14 @@ void WordleGame::submitWord()
         }
     }
 
-
+    // Row based update
     emit rowUpdated(activeRow);
 
     // Type 0 = reveal animation
     emit rowAnimation(activeRow, 0);
 
 
+    // For coloring the keyboard keys
     for (int i = 0; i < 5; ++i)
     {
         QChar letter = board[activeRow][i].letter;
