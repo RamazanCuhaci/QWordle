@@ -18,6 +18,12 @@ This project is clone of a Wordle game built with **Qt (C++ & QML)** and develop
 
 ---
 
+## Examples
+
+### Exampel of Winning Scenario
+
+![Winning](preview.gif)
+
 ## 🧠 Architecture Overview
 
 This project cleanly separates concerns between the QML user interface and the C++ game logic. Below are the core C++ classes and their responsibilities:
