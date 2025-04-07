@@ -36,7 +36,8 @@ https://github.com/user-attachments/assets/75fcac48-2b0b-41a3-929b-27705201075e
 - This scenario includes:
   - Losing mechanism  
   - Not in word list animation 
-  - Not in enough letters animation 
+  - Not in enough letters animation
+  - Open How To Play popup in game
   - When lose popup correct word
     
 https://github.com/user-attachments/assets/84d3b4e2-c904-4506-aa0d-801b3434d6c4
@@ -44,7 +45,7 @@ https://github.com/user-attachments/assets/84d3b4e2-c904-4506-aa0d-801b3434d6c4
 
 
 
-## 🧠 Architecture Overview
+##  Architecture Overview
 
 This project cleanly separates concerns between the QML user interface and the C++ game logic. Below are the core C++ classes and their responsibilities:
 
