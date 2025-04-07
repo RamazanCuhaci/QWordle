@@ -4,8 +4,8 @@ import QtQuick.Window 2.15
 
 Popup {
     id: toastPopup
-    width: 100
-    height: 50
+    width: 120
+    height: 60
     modal: false
     focus: false
     x: (parent ? parent.width : 400) / 2 - width / 2
@@ -26,7 +26,7 @@ Popup {
         Text {
             id: toastText
             anchors.centerIn: parent
-            font.pixelSize: 8
+            font.pixelSize: 12
             color: "#121213"
             text: "Default message"
             horizontalAlignment: Text.AlignHCenter
