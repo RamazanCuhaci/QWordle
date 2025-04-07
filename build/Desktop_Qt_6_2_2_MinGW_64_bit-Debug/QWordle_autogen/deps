@@ -478,14 +478,14 @@ QWordle_autogen/timestamp: \
 	C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake \
 	C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
 	C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Debug/QWordle_autogen/moc_predefs.h \
-	C:/Users/ramcho/Desktop/Lectures/QWordle/gamemodel.cpp \
-	C:/Users/ramcho/Desktop/Lectures/QWordle/gamemodel.h \
-	C:/Users/ramcho/Desktop/Lectures/QWordle/keyinputfilter.cpp \
-	C:/Users/ramcho/Desktop/Lectures/QWordle/keyinputfilter.h \
+	C:/Users/ramcho/Desktop/Lectures/QWordle/include/gamemodel.h \
+	C:/Users/ramcho/Desktop/Lectures/QWordle/include/keyinputfilter.h \
+	C:/Users/ramcho/Desktop/Lectures/QWordle/include/worddictionary.h \
+	C:/Users/ramcho/Desktop/Lectures/QWordle/include/wordlegame.h \
 	C:/Users/ramcho/Desktop/Lectures/QWordle/main.cpp \
 	C:/Users/ramcho/Desktop/Lectures/QWordle/qml.qrc \
-	C:/Users/ramcho/Desktop/Lectures/QWordle/worddictionary.cpp \
-	C:/Users/ramcho/Desktop/Lectures/QWordle/worddictionary.h \
-	C:/Users/ramcho/Desktop/Lectures/QWordle/wordlegame.cpp \
-	C:/Users/ramcho/Desktop/Lectures/QWordle/wordlegame.h \
+	C:/Users/ramcho/Desktop/Lectures/QWordle/src/gamemodel.cpp \
+	C:/Users/ramcho/Desktop/Lectures/QWordle/src/keyinputfilter.cpp \
+	C:/Users/ramcho/Desktop/Lectures/QWordle/src/worddictionary.cpp \
+	C:/Users/ramcho/Desktop/Lectures/QWordle/src/wordlegame.cpp \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

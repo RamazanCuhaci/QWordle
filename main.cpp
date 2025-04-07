@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
 
 
-    WordleGame* wordleGame = new WordleGame(&app,":/words.txt");
+    WordleGame* wordleGame = new WordleGame(&app,":/resources/words.txt");
     GameModel* gameModel = new GameModel(wordleGame);
 
     KeyInputFilter keyFilter(&app);
@@ -31,8 +31,8 @@ int main(int argc, char *argv[])
     engine.rootContext()->setContextProperty("wordleGame", wordleGame);
     engine.rootContext()->setContextProperty("gameModel", gameModel);
 
-
-    const QUrl url(QStringLiteral("qrc:/main.qml"));
+    engine.addImportPath("qrc:/qml");
+    const QUrl url(QStringLiteral("qrc:qml/main.qml"));
     QObject::connect(
         &engine,
         &QQmlApplicationEngine::objectCreated,

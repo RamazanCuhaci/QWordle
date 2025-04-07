@@ -336,27 +336,27 @@
 	"HEADERS" : 
 	[
 		[
-			"C:/Users/ramcho/Desktop/Lectures/QWordle/gamemodel.h",
+			"C:/Users/ramcho/Desktop/Lectures/QWordle/include/gamemodel.h",
 			"MU",
-			"EWIEGA46WW/moc_gamemodel.cpp",
+			"6YEA5652QU/moc_gamemodel.cpp",
 			null
 		],
 		[
-			"C:/Users/ramcho/Desktop/Lectures/QWordle/keyinputfilter.h",
+			"C:/Users/ramcho/Desktop/Lectures/QWordle/include/keyinputfilter.h",
 			"MU",
-			"EWIEGA46WW/moc_keyinputfilter.cpp",
+			"6YEA5652QU/moc_keyinputfilter.cpp",
 			null
 		],
 		[
-			"C:/Users/ramcho/Desktop/Lectures/QWordle/worddictionary.h",
+			"C:/Users/ramcho/Desktop/Lectures/QWordle/include/worddictionary.h",
 			"MU",
-			"EWIEGA46WW/moc_worddictionary.cpp",
+			"6YEA5652QU/moc_worddictionary.cpp",
 			null
 		],
 		[
-			"C:/Users/ramcho/Desktop/Lectures/QWordle/wordlegame.h",
+			"C:/Users/ramcho/Desktop/Lectures/QWordle/include/wordlegame.h",
 			"MU",
-			"EWIEGA46WW/moc_wordlegame.cpp",
+			"6YEA5652QU/moc_wordlegame.cpp",
 			null
 		]
 	],
@@ -390,6 +390,7 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"C:/Users/ramcho/Desktop/Lectures/QWordle/include",
 		"C:/Qt/6.2.2/mingw_64/include/QtCore",
 		"C:/Qt/6.2.2/mingw_64/include",
 		"C:/Qt/6.2.2/mingw_64/mkspecs/win32-g++",
@@ -432,19 +433,27 @@
 	"SETTINGS_FILE" : "C:/Users/ramcho/Desktop/Lectures/QWordle/build/Desktop_Qt_6_2_2_MinGW_64_bit-Debug/CMakeFiles/QWordle_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "C:/Users/ramcho/Desktop/Lectures/QWordle/gamemodel.cpp", "MU", null ],
-		[
-			"C:/Users/ramcho/Desktop/Lectures/QWordle/keyinputfilter.cpp",
-			"MU",
-			null
-		],
 		[ "C:/Users/ramcho/Desktop/Lectures/QWordle/main.cpp", "MU", null ],
 		[
-			"C:/Users/ramcho/Desktop/Lectures/QWordle/worddictionary.cpp",
+			"C:/Users/ramcho/Desktop/Lectures/QWordle/src/gamemodel.cpp",
 			"MU",
 			null
 		],
-		[ "C:/Users/ramcho/Desktop/Lectures/QWordle/wordlegame.cpp", "MU", null ]
+		[
+			"C:/Users/ramcho/Desktop/Lectures/QWordle/src/keyinputfilter.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/ramcho/Desktop/Lectures/QWordle/src/worddictionary.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/ramcho/Desktop/Lectures/QWordle/src/wordlegame.cpp",
+			"MU",
+			null
+		]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

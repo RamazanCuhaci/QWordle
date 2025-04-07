@@ -1,20 +1,16 @@
 <RCC>
     <qresource prefix="/">
-        <file>main.qml</file>
-        <file>Keyboard.qml</file>
-        <file>WordleBoard.qml</file>
-        <file>LetterCell.qml</file>
-        <file>Key.qml</file>
-        <file>words.txt</file>
-        <file>ToastPopup.qml</file>
-        <file>IntroPage.qml</file>
-        <file>GamePage.qml</file>
-        <file>HowToPlayPopup.qml</file>
-        <file>GameOverPopup.qml</file>
-    </qresource>
-    <qresource prefix="/images">
-        <file>incorrect-example.png</file>
-        <file>wrong-spot-example.png</file>
-        <file>wordle-icon.png</file>
+        <file>qml/main.qml</file>
+        <file>qml/Keyboard.qml</file>
+        <file>qml/WordleBoard.qml</file>
+        <file>qml/LetterCell.qml</file>
+        <file>qml/Key.qml</file>
+        <file>resources/words.txt</file>
+        <file>qml/ToastPopup.qml</file>
+        <file>qml/IntroPage.qml</file>
+        <file>qml/GamePage.qml</file>
+        <file>qml/HowToPlayPopup.qml</file>
+        <file>qml/GameOverPopup.qml</file>
+        <file>resources/wordle-icon.png</file>
     </qresource>
 </RCC>
