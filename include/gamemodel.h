@@ -14,9 +14,6 @@ public:
     QVariant data(const QModelIndex& index, int role) const override;
     QHash<int, QByteArray> roleNames() const override;
 
-signals:
-    void animateRow(int rowIndex);
-
 private slots:
     void updateChangedRow(int row);
     void updateChangedCell(int row, int column);

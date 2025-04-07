@@ -27,7 +27,6 @@ public:
     QVector<QVector<LetterInfo>> getBoardState() const; // Get board data
     int getActiveRow() const;
     int getActiveColumn() const;
-    // WordleGame.h
 
 signals:
     void rowUpdated(int row);
@@ -39,9 +38,13 @@ signals:
     // 2:win animation
     void rowAnimation(int row, int type);
 
+    // For updating keyboard key color for result
     void updateKeyStates(QVariantMap keyStates);
+
+
     void showNotification(QString message);
-    void boardUpdated();
+
+    void boardReset();
 
 private:
     QString correctWord;

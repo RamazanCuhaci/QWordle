@@ -168,7 +168,7 @@ void WordleGame::restartGame()
     qDebug() << "GAME RESTARTED\n" ;
     m_keyStates.clear();
     emit updateKeyStates(m_keyStates);
-    emit boardUpdated();
+    emit boardReset();
 }
 
 

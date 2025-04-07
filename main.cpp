@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
     KeyInputFilter keyFilter(&app);
     app.installEventFilter(&keyFilter);
 
-    // Connect the filter's signals to your game slots
+    // Connect the filter's signals to wordle game logic slots
     QObject::connect(&keyFilter, &KeyInputFilter::letterTyped,
                      wordleGame, &WordleGame::typeLetter);
     QObject::connect(&keyFilter, &KeyInputFilter::deletePressed,
@@ -28,6 +28,7 @@ int main(int argc, char *argv[])
     QObject::connect(&keyFilter, &KeyInputFilter::submitPressed,
                      wordleGame, &WordleGame::submitWord);
 
+    // Expose to main game classes to qml
     engine.rootContext()->setContextProperty("wordleGame", wordleGame);
     engine.rootContext()->setContextProperty("gameModel", gameModel);
 

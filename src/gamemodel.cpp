@@ -5,7 +5,7 @@ GameModel::GameModel(WordleGame* game, QObject* parent)
 {
     connect(game, &WordleGame::rowUpdated, this, &GameModel::updateChangedRow);
     connect(game, &WordleGame::cellUpdated, this, &GameModel::updateChangedCell);
-    connect(game, &WordleGame::boardUpdated, this, &GameModel::resetBoard);
+    connect(game, &WordleGame::boardReset, this, &GameModel::resetBoard);
 
 }
 
