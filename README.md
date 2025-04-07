@@ -2,7 +2,6 @@
 
 This project is clone of a Wordle game built with **Qt (C++ & QML)** and developed with QT 6.2.2
 
-![Gameplay Preview](preview.gif)
 
 ---
 
