@@ -22,8 +22,6 @@ This project is clone of a Wordle game built with **Qt (C++ & QML)** and develop
 
 This project cleanly separates concerns between the QML user interface and the C++ game logic. Below are the core C++ classes and their responsibilities:
 
----
-
 ### `WordleGame` – Core Game Logic
 
 - Maintains the game state: current row, column, correct answer, and letter board.
@@ -59,7 +57,7 @@ This project cleanly separates concerns between the QML user interface and the C
   - `StateRole`: the result status (`Correct`, `Misplaced`, etc.)
 - Connects to `WordleGame` signals to emit data updates efficiently (`dataChanged`, `beginResetModel`).
 
-#### Why use `QAbstractListModel`?
+#### Why I Choose `QAbstractListModel`?
 
 Using a model provides several advantages in a QML-heavy UI:
 - Automatic UI updates through bindings — no manual syncing needed.
