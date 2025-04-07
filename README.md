@@ -57,9 +57,7 @@ This project cleanly separates concerns between the QML user interface and the C
   - `StateRole`: the result status (`Correct`, `Misplaced`, etc.)
 - Connects to `WordleGame` signals to emit data updates efficiently (`dataChanged`, `beginResetModel`).
 
-#### Why I Choose `QAbstractListModel`?
-
-Using a model provides several advantages in a QML-heavy UI:
+Using a model  `QAbstractListModel` provides several advantages in a QML-heavy UI:
 - Automatic UI updates through bindings — no manual syncing needed.
 - Efficient rendering with `ListView`, `Repeater`, or `GridView`.
 - Clean separation of logic (C++) and presentation (QML).
