@@ -21,18 +21,17 @@ This project is clone of a Wordle game built with **Qt (C++ & QML)** and develop
 ## Examples
 
 ### Example of Winning Scenario
-
+- This scenario includes:
+  - Winning mechanism  
+  - Word reveal animation  
+  - Coloring cell and keyboard  
+  - Typing animation  
+  - Winning animation
 https://github.com/user-attachments/assets/75fcac48-2b0b-41a3-929b-27705201075e
 
 
 
-### Example of Winning Scenario
-- This scenario includes:
-  1. Winning mechanism  
-  2. Word reveal animation  
-  3. Coloring cell and keyboard  
-  4. Typing animation  
-  5. Winning animation
+### Example of Losing Scenario
 
 https://github.com/user-attachments/assets/84d3b4e2-c904-4506-aa0d-801b3434d6c4
 
