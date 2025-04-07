@@ -7,15 +7,18 @@ GridView {
     cellWidth: 60
     cellHeight: 60
     interactive: false
-    property bool gameWon
 
     delegate: LetterCell {
         letter: model.letter
         state: model.state
     }
 
+
     function animateRow(rowIndex, type) {
+
         var delay = 360;
+
+        // For each cell in a row
         for (var i = 0; i < 5; i++) {
             var letterCell = board.itemAtIndex(rowIndex * 5 + i);
             if (letterCell) {

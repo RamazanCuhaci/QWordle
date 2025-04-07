@@ -8,10 +8,10 @@ Popup {
     height: 50
     modal: false
     focus: false
-    x: (parent ? parent.width : 400) / 2 - width / 2  // Center horizontally manually
+    x: (parent ? parent.width : 400) / 2 - width / 2
     y: 20
     closePolicy: Popup.NoAutoClose
-
+    background: null
     property alias message: toastText.text
 
     Rectangle {
@@ -20,6 +20,8 @@ Popup {
         height: parent.height
         color: "#f8f8f8"
         opacity: 0.95
+        anchors.fill: parent
+        radius:20
 
         Text {
             id: toastText
@@ -32,7 +34,7 @@ Popup {
         }
     }
 
-    // Animation to open the popup
+
     onOpened: {
         toastPopup.opacity = 0.0
         openAnim.start()

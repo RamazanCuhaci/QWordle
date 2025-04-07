@@ -91,7 +91,9 @@ Popup {
                             letter: modelData.letter
                             state: modelData.state
                             Component.onCompleted: {
-                                if (modelData.flip) triggerRevealAnimation(0, false)
+                                if (modelData.flip) {
+                                    triggerRevealAnimation(0);
+                                }
                             }
                         }
                     }
@@ -129,7 +131,9 @@ Popup {
                             letter: modelData.letter
                             state: modelData.state
                             Component.onCompleted: {
-                                if (modelData.flip) triggerRevealAnimation(0, false)
+                                if (modelData.flip) {
+                                    triggerRevealAnimation(0);
+                                }
                             }
                         }
                     }
@@ -167,7 +171,9 @@ Popup {
                             letter: modelData.letter
                             state: modelData.state
                             Component.onCompleted: {
-                                if (modelData.flip) triggerRevealAnimation(0, false)
+                                if (modelData.flip) {
+                                    triggerRevealAnimation(0);
+                                }
                             }
                         }
                     }

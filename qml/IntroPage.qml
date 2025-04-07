@@ -22,7 +22,7 @@ Item {
             text: "QWordle"
             font.pixelSize: 40
             font.bold: true
-            //font.family: "Helvetica"
+            font.family: "Helvetica"
             horizontalAlignment: Text.AlignHCenter
             anchors.horizontalCenter: parent.horizontalCenter
         }
@@ -53,8 +53,8 @@ Item {
                 anchors.fill:parent
                 onClicked: playPressed()
                 hoverEnabled: true
-                onEntered: parent.color = "#2b2c2e"
-                onExited: parent.color = "#000000"
+                onEntered: playButton.color = "#2b2c2e"
+                onExited: playButton.color = "#000000"
             }
 
         }

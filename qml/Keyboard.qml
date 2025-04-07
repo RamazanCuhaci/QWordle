@@ -4,7 +4,7 @@ import QtQuick.Controls 2.15
 
 Item {
     id: keyboard
-    property var keyStates: ({})  // Default mapping: empty means all keys use default state 0
+    property var keyStates: ({})
 
     Column {
         spacing: 8
@@ -56,8 +56,8 @@ Item {
                     anchors.fill: parent
                     hoverEnabled: true
                     onPressed: wordleGame.submitWord()
-                    onEntered: parent.color ="#9a9fa1"
-                    onExited: parent.color ="#818384"
+                    onEntered: enterKey.color ="#9a9fa1"
+                    onExited: enterKey.color ="#818384"
                 }
 
             }
@@ -88,8 +88,8 @@ Item {
                     anchors.fill: parent
                     hoverEnabled: true
                     onPressed: wordleGame.deleteLetter()
-                    onEntered: parent.color ="#9a9fa1"
-                    onExited: parent.color ="#818384"
+                    onEntered: deleteKey.color ="#9a9fa1"
+                    onExited: deleteKey.color ="#818384"
                 }
 
             }
