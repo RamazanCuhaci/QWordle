@@ -19,4 +19,4 @@ This project is clone of a Wordle game built with **Qt (C++ & QML)** and develop
 ---
 
 ## 📂 Project Structure
-
+<pre lang="markdown"> ``` QWordle/ ├── assets/ │ └── words.txt # Word list file for validation and answer generation ├── include/ │ ├── gamemodel.h │ ├── keyinputfilter.h │ ├── worddictionary.h │ └── wordlegame.h ├── qml/ │ ├── GamePage.qml │ ├── IntroPage.qml │ ├── LetterCell.qml │ ├── Keyboard.qml │ ├── Key.qml │ ├── WordleBoard.qml │ ├── GameOverPopup.qml │ ├── ToastPopup.qml │ ├── HowToPlayPopup.qml │ └── Main.qml ├── src/ │ ├── gamemodel.cpp │ ├── keyinputfilter.cpp │ ├── worddictionary.cpp │ └── wordlegame.cpp ├── qml.qrc # Qt resource file bundling QML and assets ├── main.cpp └── CMakeLists.txt ``` </pre>
