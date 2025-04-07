@@ -22,7 +22,7 @@ This project is clone of a Wordle game built with **Qt (C++ & QML)** and develop
 
 ### Exampel of Winning Scenario
 
-![Winning](https://github.com/user-attachments/assets/75fcac48-2b0b-41a3-929b-27705201075e)
+(https://github.com/user-attachments/assets/75fcac48-2b0b-41a3-929b-27705201075e)
 
 
 
